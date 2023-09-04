@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    h1 all answers to problem #{game.game} (#{game.solutions.num})
+    ul(class= "big-list")
+      each val in game.solutions.operations
+        li #{val.join(", ")}
+    button(onclick="window.history.back()") Back
