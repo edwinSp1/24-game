@@ -1,6 +1,6 @@
 var cmd = "SET DEBUG=express-locallibrary-tutorial:* & npm start"
 const app = require("./express-locallibrary-tutorial/app");
-var uri = "mongodb+srv://admin:bedumble3@cluster0.dcug42s.mongodb.net/?retryWrites=true&w=majority"
+var uri = process.env['DB-SECRET-KEY']
 const game24 = require('./express-locallibrary-tutorial/modules/24.js')
 const {MongoClient} = require('mongodb')
 const client = new MongoClient(uri)
