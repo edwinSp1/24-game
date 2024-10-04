@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  
+  div(id = 'navbar')
+    h1 #[a(href="/challenge") challenge] #[a(href="/solve") solver] #[a(href='/beattheclock') beat the clock] #[a(href='/beattheclock/leaderboard') leaderboard] #[a(href='/rules') rules]
+  h1 100 24 games 
+  
+  button(onclick= "window.location = window.location" id = "generate100") generate new 100
+  button(id="switch") show impossible
+  table(class="data24" id = "possible")
+    tr
+      th game
+      th solution
+      th all solutions
+      th difficulty rating
+    each val, idx in possible24
+      tr
+        td= val.game
+        td= val.sampleSolution
+        - var url = '/solutions/' + val.game
+        td #[a(href=url)= val.solutions.num]  
+        td= val.difficultyScore
+  table(class="data24" id = "impossible")
+    tr
+      th games(Impossible)
+    each val in impossible24
+      tr
+        td= val.game
+  script(type='text/javascript', src='/javascripts/script.js') 
+  
+        
+
+ 
+    

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1(class = "align-center" style="font-size: 60px;") 4nums solver
+  h1 number 1
+  input(type='number' name='game' class='dark-input num') 
+  h1 number 2
+  input(type='number' name='game' class='dark-input num')
+  h1 number 3
+  input(type='number' name='game' class='dark-input num')
+  h1 number 4
+  input(type='number' name='game' class='dark-input num')
+  
+  button(id='solve') solve
+  h1(id = "result") 
+  script(type='text/javascript', src='/javascripts/solve.js')

@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+  table(class = 'data24')
+    th player 
+    th score
+    each val in leaderboard
+      tr 
+        td=val.user
+        td=val.score

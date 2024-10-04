@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Phudu", cursive;
+  color:white;
+  background-color: black;
+}
+.data24 {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.data24 td, .data24 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+.data24 tr:hover {background-color: darkblue;}
+
+.data24 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+}
+a:visited {
+  color:lightblue;
+}
+a {
+  color:lightblue;
+}
+button, .dark-button, .dark-input {
+  font-family: "Phudu", cursive;
+  background: transparent;
+  color:white;
+  padding: 10px;
+  font-size:30px;
+}
+
+.dark-input {
+  display:block;
+}
+#impossible {
+  display:none;
+}
+.big-list {
+  font-size: 30px;
+}
+#challenge {
+  margin: auto;
+  padding: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.align-center {
+  text-align: center;
+}
+.invis {
+  display:none;
+}
+
+.num-input {
+  margin:auto;
+  width: 100px;
+  display:block;
+}
+.num-container {
+  min-width: 50px;
+  padding:10px;
+  display:inline-block;
+  border: 1px ridge gray;
+  border-radius: 10px;
+}
+.num-container:hover {
+  background-color: #a30c84;
+}
+div {
+  padding:10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  div a {
+    display:block;
+  }
+  #main-button button{
+    font-size:20px !important;
+  }
+}
+div a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}

@@ -1,0 +1,23 @@
+extends layout 
+
+block content 
+    button(onclick='window.location = window.location') new game
+    br
+    button(id='pause') pause (2 pause(s) left)
+    div(class='align-center' id ='challenge')
+    
+        h1 Beat the Clock
+        h1 time: <span id='timer'>120</span>
+        h1 count: <span id='count'>0</span>
+        
+        div(id='delete' class='num-container' style='display:inline-block;') X
+        div(id = 'game') 
+        div(id = 'operators')
+        label(for='operation' class='input2') Operation (num1+operator+num2)
+        input(type='text' style='width: 300px;' name='operation' class='input2 dark-input num-input' id='operation')
+        button(id="twoNum" style='display: block') Do operation  
+        button(id='undo' style='display: block') undo
+        button(id='skip' style='display: block') skip
+        p(id='notifications')
+
+    script(type='text/javascript', src='/javascripts/beatTheClock.js')
